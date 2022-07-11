@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+</head>
+<style>
+    h1 {
+        color: aqua;
+    }
+
+    h1:hover {
+        color: brown;
+    }
+
+    .middle-person:focus {
+        color: cadetblue;
+        font-weight: 800;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    li:first-child {
+        color: yellowgreen;
+    }
+
+    li:last-child {
+        background-color: aqua;
+    }
+
+    li:nth-child(2n) {
+        color: rebeccapurple;
+    }
+
+    li:nth-child(2n+1) {
+        background-color: chartreuse;
+    }
+
+    h3::before {
+        content: 'Hey ';
+    }
+
+    h3::after {
+        content: ' gey';
+        color: aqua;
+        font-size: 25px;
+    }
+
+    .special {
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <h1>Hey there How are you?</h1>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.google.com">google mama</a>
+    <a href="https://www.amazon.com">amazon mama</a>
+    <a href="https://www.youtube.com">youtube mama</a>
+    <a href="https://www.pixie.com">pixie mama</a>
+    <br>
+    <h3>middle size header 1</h3>
+    <h3 class="special">middle size header 2</h3>
+    <h3>middle size header 3</h3>
+    <h3>middle size header 4</h3>
+    <h3 class="special">middle size header 5</h3>
+    <h3>middle size header 6</h3>
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>Kalia</li>
+        <li>Calia</li>
+        <li>Jalia</li>
+        <li>chalaria</li>
+    </ul>
+</body>
+
+</html>
